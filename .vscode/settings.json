@@ -1,0 +1,42 @@
+{
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#363636"
+    },
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Monolisa light",
+    "editor.letterSpacing": 0.3,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "vim.vimrc.enable": true,
+    "terminal.integrated.profiles.windows": {
+        "Git Bash":{
+            "path":"C:\\Program Files\\Git\\git-bash.exe",
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.fontSize": 15,
+    "python.defaultInterpreterPath": ".venv\\Scripts\\python",
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.rulers": [80],
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=missing-module-docstring",
+        "--disable=missing-class-docstring",
+        "--disable=missing-function-docstring"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
