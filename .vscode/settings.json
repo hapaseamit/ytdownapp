@@ -2,8 +2,8 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#363636"
     },
-    "editor.fontSize": 15,
-    "editor.fontFamily": "Monolisa light",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "Monolisa Light",
     "editor.letterSpacing": 0.3,
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
@@ -14,8 +14,8 @@
             "icon": "terminal-bash"
         }
     },
-    "terminal.integrated.fontSize": 15,
-    "python.defaultInterpreterPath": ".venv\\Scripts\\python",
+    "terminal.integrated.fontSize": 14,
+    "python.pipenvPath": "venv",
     "python.formatting.provider": "black",
     "[python]": {
         "editor.rulers": [80],
