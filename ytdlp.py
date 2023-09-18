@@ -50,7 +50,7 @@ def download_youtube_video(url):
         # Download the YouTube video
         with yt_dlp.YoutubeDL(video_options) as ydl:
             video_info = ydl.extract_info(url, download=True)
-            video_filename = ydl.prepare_filename(video_info)
+            video_filename = ydl.prepare_filename(video_info) + "muted"
 
         # Set download options for audio
         audio_options = {
@@ -69,10 +69,10 @@ def download_youtube_video(url):
         # Download the YouTube audio
         with yt_dlp.YoutubeDL(audio_options) as ydl:
             audio_info = ydl.extract_info(url, download=True)
-            audio_filename = ydl.prepare_filename(audio_info)
+            audio_filename = ydl.prepare_filename(audio_info) + "audio"
 
         # Merge video and audio using FFmpeg
-        merged_filename = f"{video_filename[:-4]}_merged.mp4"
+        merged_filename = video_info.get("title", "Unknown") + ".mp4"
         video_bitrate = "2000k"
         merge_command = f'ffmpeg -i "{video_filename}" -i "{audio_filename}" -c:v copy -b:v {video_bitrate} -c:a copy "{merged_filename}"'
         os.system(merge_command)
