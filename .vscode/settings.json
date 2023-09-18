@@ -2,13 +2,13 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#363636"
     },
-    "editor.fontSize": 16,
+    "editor.fontSize": 17,
     "editor.fontFamily": "Monolisa Light",
     "editor.letterSpacing": 0.3,
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
     "vim.vimrc.enable": true,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "python.pipenvPath": "venv",
     "[python]": {
         "editor.rulers": [80],
